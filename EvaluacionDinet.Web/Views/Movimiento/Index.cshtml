@@ -1,0 +1,34 @@
+﻿@model  List<EvaluacionDinet.EntidadA.MovimientoBE>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Listado de Movimientos</h2>
+<br />
+<table>
+    <thead>
+        <tr>
+            <th>Compañia</th>
+            <th>Compañia Venta</th>
+            <th>Almacen</th>
+            <th>Tipo Movimiento</th>
+            <th>Nro Documento</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.COD_CIA</td>
+                <td>@item.COMPANIA_VENTA_3</td>
+                <td>@item.ALMACEN_VENTA</td>
+                <td>@item.TIPO_MOVIMIENTO</td>
+                <td>@item.NRO_DOCUMENTO</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+
+
